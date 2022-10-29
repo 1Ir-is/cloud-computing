@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Login</h1>
+      </div>
+      <div class="main">
+        <form action="login" method="post">
+
+          <span>
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Username" name="username">
+          </span><br>
+
+          <span>
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="password" name="password">
+          </span><br>
+
+          <button type="submit">Login</button>
+          <div class="alert alert-danger"><%= message %></div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <style>
+      body {
+        font-family: sans-serif;	
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size: cover;
+      }
+
+      .alert{
+        position: relative;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+      }
+
+      .alert-danger{
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+      }
+
+    .container {
+      width: 380px;
+      margin:7% auto;
+      border-radius: 25px;
+      background-color: rgba(0,0,0,0.1);
+      box-shadow: 0 0 17px #333;
+    }
+
+    .header {
+      text-align: center;
+      padding-top: 75px;
+    }
+
+    .header h1 {
+      color: #333;
+      font-size: 45px;
+      margin-bottom: 80px;
+    }
+
+    .main {
+      text-align: center;
+    }
+
+    .main input, button {
+      width: 300px;
+      height: 40px;
+      border:none;
+      outline: none;
+      padding-left: 40px;
+      box-sizing: border-box;
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .main button {
+      padding-left: 0;
+      background-color: #83acf1;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-bottom: 70px;
+      cursor: pointer;
+    }
+
+    .main button:hover {
+      box-shadow: 2px 2px 5px #555;
+      background-color: #7799d4;
+    }
+    .main input:hover {
+      box-shadow: 2px 2px 5px #555;
+      background-color: #ddd;
+    }
+
+    .main span {
+      position: relative;
+    }
+
+    .main i {
+      position: absolute;
+      left: 15px;
+      color: #333;
+      font-size: 16px;
+      top: 2px;
+    }
+  </style>
+</html>

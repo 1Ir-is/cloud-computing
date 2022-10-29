@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="hero">
+        <nav>
+            <div class="shop_name"><a href="">ATN SHOP</a></div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <img src="/images/huy.jpg" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="/images/huy.jpg">
+                        <h2><%= name %></h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="/images/profile.png">
+                        <p>Edit Profile</p>
+                         <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="/images/setting.png">
+                        <p>Setting & Privacy</p>
+                         <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="/images/help.png">
+                        <p>Help & Support</p>
+                         <span>></span>
+                    </a>
+                    <a href="https://atntoystore-app.herokuapp.com/" class="sub-menu-link">
+                        <img src="/images/logout.png">
+                        <p>Logout</p>
+                         <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>     
+            <div class="table">
+            <%- table_string %>
+          </div>        
+    </div> 
+  </body>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+</html>

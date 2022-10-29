@@ -1,0 +1,5 @@
+var display_table = require('../../models/product_table');
+
+async function updateTable(){
+    
+}

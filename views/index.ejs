@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="inner-width">
+      <a href="#" class="logo"><span>A</span>TN</a>
+      <div class="navbar-menu">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">products</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+  </div>
+  <section id="home">
+    <div class="content1">
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Proin ante tellus, interdum vitae consequat maximus, sagittis ac lacus. Phasellus finibus rutrum diam</p>
+        <form action="" method="post">
+          <button type="submit">get started</button>
+        </form>
+      </div>
+      <div class="social-container">
+        <div class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </div>
+      </div>
+    </div>
+    <div class="content2">
+      <h1>ATN <span>SHOP</span></h1>
+    </div>
+  </section>
+</body>
+
+  <style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .navbar{
+      position: fixed;
+      background-color: transparent;
+      width: 100%;
+      padding: 30px 0;
+      top: 0;
+      z-index: 100;
+      line-height: 20px;
+    }
+    .inner-width{
+      max-width: 1300px;
+      margin: auto;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo{
+      font-size: 30px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      font-family: 'Great Vibes',cursive;
+      color: #fff;
+      cursor: pointer;
+    }
+    .logo span{
+      font-size: 38px;
+      color: #9a533d;
+    }
+    .navbar-menu a{
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'Raleway',sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-left: 35px;
+      display: inline-block;
+    }
+    .navbar-menu a::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 1.8px;
+      background-color: #846445;
+      transition: width .3s;
+    }
+    .navbar-menu a:hover::after{
+      width: 100%;
+    }
+
+    #home{
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .content1{
+      background-color: #ad967c;
+    }
+    .content2{
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(images/pexels-ashutosh-sonwani-1720957.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .content1 .content{
+      color: #000;
+      padding: 20px;
+      background-color: #ad967c;
+      position: absolute;
+      left: 150px;
+      top: 340px;
+      text-align: left;
+      width: 500px;
+      height: 317px;
+    }
+    .content p{
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      font-family: 'Raleway',sans-serif;
+    }
+    .content button{
+      padding: 17px 25px;
+      margin-top: 30px;
+      background-color: #846445;
+      border: none;
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      font-family: 'Raleway',sans-serif;
+      outline: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: .3s;
+    }
+    .content button:hover{
+      color: #fff;
+    }
+    .social-container{
+      position: absolute;
+      left: 40px;
+      bottom: 30%;
+    }
+    .social-icons{
+      list-style: none;
+    }
+    .social-icons li{
+      margin: 35px 0;
+    }
+    .social-icons li i{
+      color: rgba(255,255,255,0.77);
+      font-size: 20px;
+    }
+    .social-icons li a:hover i{
+      transform: scale(1.5);
+      color: #846445;
+      transition: all .2s ease-in-out;
+    }
+    .social-icons::before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 150px;
+      top: -170px;
+      left: 8px;
+      background-color: #000000b0;
+    }
+    .social-icons::after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 150px;
+      bottom: -170px;
+      left: 8px;
+      background-color: #000000b0;
+    }
+    .content2 h1{
+      position: absolute;
+      left: 200px;
+      top: 240px;
+      font-size: 80px;
+      font-family: 'Raleway',sans-serif;
+      font-weight: 500;
+      color: #000;
+      letter-spacing: 8px;
+    }
+    .content2 h1 span{
+      color: #fff;
+    } 
+  </style>
+</html> 

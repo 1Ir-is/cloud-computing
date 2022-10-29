@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+      *{
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+          box-sizing: border-box;
+      }
+
+      .hero{
+          width: 100%;
+          min-height: 100vh;
+          background: #eceaff;
+          color: #525252;  
+      }
+
+      .table{
+        margin-top: 60px;
+      }
+
+      .shop_name a{ 
+          text-decoration: none;
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+      }
+
+      nav{
+          background: #1a1a1a;
+          width: 100%;
+          padding: 10px 10%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+      }
+
+      nav ul{
+          width: 100%;
+          text-align: right;
+      }
+
+      nav ul li{
+          display: inline-block;
+          list-style: none;
+          margin: 10px 20px;
+      }
+
+      nav ul li a{
+          color: #fff;
+          text-decoration: none;
+      } 
+
+      .shop_name{
+          width: 120px;
+      }
+
+      .user-pic{
+          width: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          margin-left: 30px;
+      }
+
+      .sub-menu-wrap{
+          position: absolute;
+          top: 100%;
+          right: 10%;
+          width: 320px;
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 0.5s;
+      }
+
+      .sub-menu-wrap.open-menu{
+          max-height: 400px;
+      }
+      .sub-menu{
+          background: #fff;
+          padding: 20px;
+          margin: 10px;
+      }
+
+      .user-info{
+          display: flex;
+          align-items: center;  
+      }
+
+      .user-info h3{
+          font-weight: 500;
+      }
+
+      .user-info img{
+          width: 60px;
+          border-radius: 50%;
+          margin-right: 15px;
+      }
+
+      .sub-menu hr{
+          border: 0;
+          height: 1px;
+          width: 100%;
+          background: #ccc;
+          margin: 15px 0 10px;
+      }
+
+      .sub-menu-link{
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #525252;
+          margin: 12px 0;
+      }
+
+      .sub-menu-link p{
+          width: 100%;
+      }
+
+      .sub-menu-link img{
+          width: 40px;
+          background: #e5e5e5;
+          border-radius: 50%;
+          padding: 8px;
+          margin-right: 15px;
+      }
+
+      .sub-menu-link span{
+          font-size: 22px;
+          transition: 0.5s;
+      }
+      .sub-menu-link:hover span{
+          transform: translateX(5px);
+      }
+
+      .sub-menu-link:hover p{
+          font-weight: 600;
+      }
+
+      .content-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 10px auto;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.btn-insert{
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-edit{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn-delete{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
